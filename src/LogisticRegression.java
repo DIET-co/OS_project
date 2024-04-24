@@ -109,8 +109,8 @@ public class LogisticRegression {
         double[][] X = {
                 {0.5, 1.5}, {1.5, 1.5}, {0.5, -0.5}, {-1.5, 1.5}, {-0.5, -1.5}, {1.5, -1.5},
                 {1.1, 2.5}, {2.5, 2.1}, {1.5, -0.1}, {-1.2, 2.1}, {-1.5, -2.5}, {2.5, -1.0}
-        }; // Example data points
-        double[] y = {0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1}; // Example labels
+        }; //  data points
+        double[] y = {0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1}; // labels
 
         LogisticRegression model = new LogisticRegression(2); // Initialize logistic regression model with 2 features
 

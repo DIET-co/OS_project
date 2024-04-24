@@ -26,7 +26,7 @@ public class ArraySum {
 
         @Override
         protected Long compute() {
-            if (end - start <= 100) { // This threshold can be adjusted for performance tuning
+            if (end - start <= 1000) { // This threshold can be adjusted for performance tuning
                 long sum = 0;
                 for (int i = start; i < end; i++) {
                     sum += array[i];
@@ -45,10 +45,10 @@ public class ArraySum {
     }
 
     public static void main(String[] args) {
-        int[] array = new int[1000000]; // Array of 10,000 elements
+        int[] array = new int[100000]; // Array of 1,00,000 elements
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(100000000); // Fill the array with random numbers up to 100
+            array[i] = random.nextInt(1000000); // Fill the array with random numbers up to 1,00,00,000
         }
 
         // Serial Summation

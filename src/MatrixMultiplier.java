@@ -52,7 +52,7 @@ public class MatrixMultiplier {
     }
 
     public static void main(String[] args) {
-        int size = 1000; // Modify size for testing
+        int size = 1000; // M size 
         double[][] matrix1 = MatrixGenerator.generateRandomMatrix(size, size);
         double[][] matrix2 = MatrixGenerator.generateRandomMatrix(size, size);
 
