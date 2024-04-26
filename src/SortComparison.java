@@ -12,6 +12,7 @@ public class SortComparison {
         return random.ints(100000, 1, 100000000).toArray();
     }
 
+    
     // Quick Sort (Serial)
     public static void quickSort(int[] array, int left, int right) {
         if (left < right) {
@@ -20,6 +21,7 @@ public class SortComparison {
             quickSort(array, pivotIndex + 1, right);
         }
     }
+
 
     private static int partition(int[] array, int left, int right) {
         int pivot = array[right];
@@ -37,6 +39,7 @@ public class SortComparison {
         array[right] = swapTemp;
         return i + 1;
     }
+
 
     // Quick Sort (Parallel)
     static class ParallelQuickSort extends RecursiveAction {
